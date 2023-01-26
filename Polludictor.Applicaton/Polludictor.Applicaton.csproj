@@ -12,10 +12,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Commands\" />
     <Folder Include="Services\" />
-    <Folder Include="Queries\" />
     <Folder Include="Shared\EnumTypes\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentResults" Version="3.14.0" />
+    <PackageReference Include="MediatR" Version="11.0.0" />
   </ItemGroup>
 
 </Project>

@@ -12,12 +12,16 @@
 
   <ItemGroup>
     <Folder Include="Converters\" />
-    <Folder Include="Database\DbContext\" />
     <Folder Include="Database\EntityTypesConfigurations\" />
     <Folder Include="Database\InitialData\" />
     <Folder Include="Entities\" />
     <Folder Include="Repositories\" />
     <Folder Include="Queries\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.10" />
   </ItemGroup>
 
 </Project>
