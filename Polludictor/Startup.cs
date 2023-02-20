@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Polludictor.API.DependencyIncjection;
+using Polludictor.Applicaton.Services;
 using Polludictor.Persistence.Database.DatabaseContext;
 
 namespace Polludictor.API
@@ -28,6 +29,8 @@ namespace Polludictor.API
             });
 
             services.AddCustomServices(_configuration!);
+
+            var test = new KarkatService();
         }
 
         public void Configure(WebApplication app)
